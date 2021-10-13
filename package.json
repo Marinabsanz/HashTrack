@@ -1,5 +1,5 @@
 {
-  "name": "real-time-tweet-streamerh",
+  "name": "hastrack-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,11 +12,17 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run development",
+    "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "production": "npm run build && NODE_ENV=production npm run server",
+    "client": "react-scripts start",
+    "server": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  
+
   "eslintConfig": {
     "extends": [
       "react-app",
