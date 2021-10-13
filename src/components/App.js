@@ -13,8 +13,8 @@ class App extends React.Component {
 
         <h1 className="ui header">
           <div className="content">
-            Real Time Tweet Streamer
-            <div className="sub header">Powered by Twitter data</div>
+            HashTrack
+            <div className="sub header">Your Hashtag Tracker!</div>
           </div>
         </h1>
 
