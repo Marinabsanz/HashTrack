@@ -16,9 +16,9 @@ const ErrorMessage = ({ error, styleType }) => {
           See
           <a href={error.type} target="_blank" rel="noopener noreferrer">
             {" "}
-            sorry not found, go to twitter for{" "}
+            Twitter documentation{" "}
           </a>
-         details.
+          for further details.
         </em>
       );
     }

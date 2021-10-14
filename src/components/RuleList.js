@@ -12,7 +12,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         rules: [...state.rules, ...action.payload],
-        newRule: "dogs",
+        newRule: "",
         errors: [],
       };
     case "add_errors":
@@ -34,8 +34,9 @@ const reducer = (state, action) => {
 const RuleList = () => {
   const initialState = { rules: [], newRule: "", isLoading: false, errors: [] };
   const [state, dispatch] = useReducer(reducer, initialState);
-  const rule1 = "dogs";
-  const rule2 = `trying to create a rule-marina`;
+  const exampleRule = "from:twitterdev has:links";
+  const ruleMeaning = `This example rule will match Tweets posted by 
+     TwtterDev containing links`;
   const operatorsURL =
     "/content/developer-twitter/en/docs/labs/filtered-stream/operators";
   const rulesURL = "/api/rules";
@@ -84,12 +85,12 @@ const RuleList = () => {
     const { isLoading, rules } = state;
 
     const message = {
-      title: "rules present",
+      title: "Hastag selected:",
       details: [
-        `estas son las reglas presentes`,
-        rule1,
-        rule2,
-        
+        `There are currently no rules on this stream. Start by adding the rule 
+        below.`,
+        exampleRule,
+        ruleMeaning,
       ],
       type: operatorsURL,
     };
@@ -98,7 +99,7 @@ const RuleList = () => {
       if (rules && rules.length > 0) {
         return rules.map((rule) => (
           <Rule
-            key={rule.index}
+            key={rule.id}
             data={rule}
             onRuleDelete={(id) => deleteRule(id)}
           />

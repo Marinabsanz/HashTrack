@@ -12,9 +12,14 @@ class App extends React.Component {
         <div className="introduction"></div>
 
         <h1 className="ui header">
+          <img
+            className="ui image"
+            src="../logo.jpg"
+            alt="logo"
+          />
           <div className="content">
-            Real Time Tweet Streamer
-            <div className="sub header">Powered by Twitter data</div>
+            Hashtrack App
+            <div className="sub header">your app to follow your prefered hastags</div>
           </div>
         </h1>
 
