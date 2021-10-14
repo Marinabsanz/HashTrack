@@ -21,8 +21,8 @@ https://github.com/Marinabsanz/HashTrack.git
 
 
 
----How to start the project
- After have cloned the repository yo have to install nodemodules
+---How to start the project--
+ After had cloned the repository yo have to install nodemodules
 
  ### `npm install`
 
