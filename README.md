@@ -3,50 +3,49 @@
 
 Creating an Interface that displays, in real-time, tweets containing a hashtag
 
+As a front end developer Jr , it was a challenge to create a proxy and work in the back-end part.
+The project is done using a lot of documentation of npm and differents web sites and following twitters tutorials and instructions
+
+
+
 
 
 Marina Benítez Sánchez
 
 
+--------------------------------
 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can clone the repository  with this url :
+https://github.com/Marinabsanz/HashTrack.git
 
 
 
-### `npm run build`
+---How to start the project
+ After have cloned the repository yo have to install nodemodules
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ### `npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-In the project directory, you can run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- 
+### `npm start` -->
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+###  `npm run build && NODE_ENV=production npm run server`
 
 
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
+---Important--
+As this app is for developpers you need to have a developer account in twiter, and use your BearerToken
+ yo have to connecting to the filtered stream endpoints requires you to authenticate using a bearer token from your app in the Twitter developer portal. To utilize your bearer token, you will need to have the following environment variable set. You can do so by issuing the following command in your terminal window assuming you are using bash as your shell. Replace <YOUR BEARER TOKEN HERE>, including the left and right angle brackets, with your bearer token.
 
 
+### `export TWITTER_BEARER_TOKEN=<YOUR BEARER TOKEN HERE>`
 
+
+---Now, yo are ready to explore the APP
+
+
+As you can see in the picture, 
+You can see differents twits who contains the hastag that you choose
+
+Yo can manage it using the botton: Manage rules and adding a new one!!

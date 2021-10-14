@@ -19,7 +19,7 @@ class App extends React.Component {
           />
           <div className="content">
             Hashtrack App
-            <div className="sub header">your app to follow your prefered hastags</div>
+            <div className="sub header">Your app to follow your prefered hastags</div>
           </div>
         </h1>
 
