@@ -45,7 +45,8 @@ As this app is for developpers you need to have a developer account in twiter, a
 ---Now, yo are ready to explore the APP
 
 
-As you can see in the picture, 
-You can see differents twits who contains the hastag that you choose
-
-Yo can manage it using the botton: Manage rules and adding a new one!!
+You can see differents twits who contains the hastag that you choose!! 
+ 
+Yo can manage it using the botton: Manage rules and adding a new one!
+ So...let's try!
+!
