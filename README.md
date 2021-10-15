@@ -28,10 +28,7 @@ https://github.com/Marinabsanz/HashTrack.git
 
 -In the project directory, you can run:
 
-<!-- 
-### `npm start` -->
 
-###  `npm run build && NODE_ENV=production npm run server`
 
 
 ---Important--
@@ -40,7 +37,12 @@ As this app is for developpers you need to have a developer account in twiter, a
 
 
 ### `export TWITTER_BEARER_TOKEN=<YOUR BEARER TOKEN HERE>`
+ 
+ 
+<!-- 
+### `npm start` -->
 
+###  `npm run build && NODE_ENV=production npm run server`
 
 ---Now, yo are ready to explore the APP
 
